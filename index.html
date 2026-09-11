@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pacientes</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+  </head>
+  <body>
+    <header class="app">
+      <h1>Pacientes</h1>
+      <span>UPA Rodoviária Guarujá</span>
+    </header>
+    <div class="layout">
+      <nav class="alas" id="nav-alas"></nav>
+      <main>
+        <div class="toolbar">
+          <h2 id="ala-titulo"></h2>
+          <button
+            class="btn"
+            id="btn-atualizar"
+            title="Busca os dados mais recentes direto da planilha"
+          >
+            Atualizar
+          </button>
+          <button class="btn primary" id="btn-pdf">Imprimir</button>
+          <div class="updated" id="updated-msg"></div>
+        </div>
+        <div id="conteudo"></div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
